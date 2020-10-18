@@ -58,10 +58,11 @@ body {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   color: #080763;
-  margin-top: 60px;
-  /* background-color: rgb(44, 93, 230); */
   background-image: url('~@/assets/CL-rain.jpg');
 }
 
