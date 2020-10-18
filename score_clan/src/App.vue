@@ -1,9 +1,10 @@
 <template>
   <div id="app">
     <img style="background-image: ">
-    <h1>ScoreClan Results</h1>
+    <h1>The Score Clan &#9917;</h1>
+    <h2>Latest Scores From Around The &#127758;</h2>
     <section>
-      <label for="comp-selected">Select a game: </label>
+      <label for="comp-selected"><b>Select a game: </b></label>
       <select id="comp-selected" v-model="selectedCompetition">
         <option disabled value="">Choose a game</option>
         <option v-for="(competition, index) in competitions" :value="competition" :key='index'>{{ competition.title }}</option>
@@ -11,7 +12,6 @@
       <!-- <comp-list :competitions="competitions"></comp-list> -->
 
       <comp-detail :competition="selectedCompetition"></comp-detail>
-
     </section>
   </div>
 </template>
@@ -46,7 +46,7 @@ export default {
   computed: {
   // filterComps: function(){
   //   return this.competitions.filter((competition) => {
-  //     return this.selectedCompetition.data.includes() 
+  //     return this.selectedCompetition.competition.includes() 
   //   })
   // }
 }
@@ -64,6 +64,11 @@ body {
   text-align: center;
   color: #080763;
   background-image: url('~@/assets/CL-rain.jpg');
+}
+
+a {
+  color: rgb(116, 5, 5);
+  text-decoration: none;
 }
 
 .highlights {
