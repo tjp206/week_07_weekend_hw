@@ -15,7 +15,7 @@
       <p><b><a v-bind:href="competition.url">{{ competition.url }}</a></b></p>
 
       <h3>Match Highlights:</h3>
-      <div class="highlights" v-html="competition.videos"></div>
+      <div v-for="video in competition.videos" class="highlights" v-html="video.embed"></div>
       
        
   </div>  
